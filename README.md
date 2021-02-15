@@ -1,5 +1,5 @@
-# WRT-Code
-Code for Wellesley Robotics Team FRC Robot
+# [Robot Name]
+Robot Code for FRC Team Ultraviolet (8567)
 
 ## Drivetrain
 Mecanum Drive
