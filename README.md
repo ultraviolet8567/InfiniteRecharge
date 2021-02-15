@@ -2,7 +2,7 @@
 Robot Code for FRC Team Ultraviolet (8567)
 
 ## Drivetrain
-Mecanum Drive
+Four motors, two gearboxes
 * Left Front Motor - Spark Max - PWM	9
 * Left Rear Motor - Spark Max - PWM	7
 * Right Front Motor - Spark Max - PWM	8
