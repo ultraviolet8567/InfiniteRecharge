@@ -1,5 +1,5 @@
 # [Robot Name]
-Robot Code for FRC Team Ultraviolet (8567)
+Robot Code for FRC Team 8567
 
 ## Drivetrain
 Four motors, two gearboxes
