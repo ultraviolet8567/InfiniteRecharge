@@ -12,8 +12,11 @@ Four motors, two gearboxes
 * Top Motor - Spark - PWM 1
 * Bottom Motor - Spark - PWM 0
 
+
+## Surgical Tubing
+Feeder/Storage/Surgical Tubing - Spark - PWM 3
+Gate - Spark - PWM 2
+
 ## Intake
 More information pending
 
-## Surgical Tubing
-More information pending
