@@ -1,4 +1,4 @@
-# [Robot Name]
+# UltraBot
 Robot Code for FRC Team 8567
 
 ## Drivetrain
@@ -14,8 +14,8 @@ Four motors, two gearboxes
 
 
 ## Surgical Tubing
-Feeder/Storage/Surgical Tubing - Spark - PWM 3
-Gate - Spark - PWM 2
+* Feeder/Storage/Surgical Tubing - Spark - PWM 3
+* Gate - Spark - PWM 2
 
 ## Intake
 More information pending
