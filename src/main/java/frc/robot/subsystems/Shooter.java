@@ -67,6 +67,12 @@ public class Shooter extends SubsystemBase {
         return pwm;
     }
 
+    public double pwmToVelocity(double pwm) {
+        // Placeholder function; update after experimental testing
+        double velocity = pwm * 100;
+        return velocity;
+    }
+
     public double getTopMotorSpeed() {
         return shooterTopMotor.getSpeed();
     }

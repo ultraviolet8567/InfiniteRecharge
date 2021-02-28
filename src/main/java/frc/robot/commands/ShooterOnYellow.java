@@ -59,11 +59,7 @@ public class ShooterOnYellow extends CommandBase {
     // Returns true when the command should end.
     @Override
     public boolean isFinished() {
-        double speedTopMotor = m_shooter.getTopMotorSpeed();
-        double speedBottomMotor = m_shooter.getBottomMotorSpeed();
-
-        if (speedTopMotor == yellow_velocity && speedBottomMotor == yellow_velocity) return true;
-        else return false;
+        return false;
     }
 
     @Override

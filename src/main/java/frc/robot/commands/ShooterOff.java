@@ -55,11 +55,7 @@ public class ShooterOff extends CommandBase {
     // Returns true when the command should end.
     @Override
     public boolean isFinished() {
-        double speedTopMotor = m_shooter.getTopMotorSpeed();
-        double speedBottomMotor = m_shooter.getBottomMotorSpeed();
-
-        if (speedTopMotor == 0 && speedBottomMotor == 0) return true;
-        else return false;
+        return false;
     }
 
     @Override

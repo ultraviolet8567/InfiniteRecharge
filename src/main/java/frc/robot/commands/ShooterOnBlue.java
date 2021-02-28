@@ -59,11 +59,7 @@ public class ShooterOnBlue extends CommandBase {
     // Returns true when the command should end.
     @Override
     public boolean isFinished() {
-        double speedTopMotor = m_shooter.getTopMotorSpeed();
-        double speedBottomMotor = m_shooter.getBottomMotorSpeed();
-
-        if (speedTopMotor == blue_velocity && speedBottomMotor == blue_velocity) return true;
-        else return false;
+        return false;
     }
 
     @Override
