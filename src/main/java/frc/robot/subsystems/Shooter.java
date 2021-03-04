@@ -49,15 +49,15 @@ public class Shooter extends SubsystemBase {
     // This method will be called once per scheduler run
     @Override
     public void periodic() {
-        SmartDashboard.putNumber("Shooter/Top/velocity", shooterTopMotor.getSpeed());
-        SmartDashboard.putNumber("Shooter/Bottom/velocity", shooterBottomMotor.getSpeed());
+        SmartDashboard.putNumber("Motor Speeds/Top Shooter", shooterTopMotor.getSpeed());
+        SmartDashboard.putNumber("Motor Speeds/Bottom Shooter", shooterBottomMotor.getSpeed());
     }
 
     // This method will be called once per scheduler run when in simulation
     @Override
     public void simulationPeriodic() {
-        SmartDashboard.putNumber("Shooter/Top/velocity", shooterTopMotor.getSpeed());
-        SmartDashboard.putNumber("Shooter/Bottom/velocity", shooterBottomMotor.getSpeed());
+        SmartDashboard.putNumber("Motor Speeds/Top Shooter", shooterTopMotor.getSpeed());
+        SmartDashboard.putNumber("Motor Speeds/Bottom Shooter", shooterBottomMotor.getSpeed());
     }
     
     // Converts velocities to PWM values
