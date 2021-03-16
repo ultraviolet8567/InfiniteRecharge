@@ -11,7 +11,6 @@
 
 package frc.robot.subsystems;
 
-
 import frc.robot.commands.*;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
@@ -49,18 +48,18 @@ public class Shooter extends SubsystemBase {
     // This method will be called once per scheduler run
     @Override
     public void periodic() {
-        SmartDashboard.putNumber("Motor Speeds/Top Shooter", shooterTopMotor.getSpeed());
-        SmartDashboard.putNumber("Motor Speeds/Bottom Shooter", shooterBottomMotor.getSpeed());
+        SmartDashboard.putNumber("Motor Speeds/Shooter 1 (Top)", shooterTopMotor.getSpeed());
+        SmartDashboard.putNumber("Motor Speeds/Shooter 2 (Bottom)", shooterBottomMotor.getSpeed());
     }
 
     // This method will be called once per scheduler run when in simulation
     @Override
     public void simulationPeriodic() {
-        SmartDashboard.putNumber("Motor Speeds/Top Shooter", shooterTopMotor.getSpeed());
-        SmartDashboard.putNumber("Motor Speeds/Bottom Shooter", shooterBottomMotor.getSpeed());
+        SmartDashboard.putNumber("Motor Speeds/Shooter 1 (Top)", shooterTopMotor.getSpeed());
+        SmartDashboard.putNumber("Motor Speeds/Shooter 2 (Bottom)", shooterBottomMotor.getSpeed());
     }
     
-    // Converts velocities to PWM values
+    /* Converts velocities to PWM values - Unused
     private double velocityToPWM(double velocity) {
         // Placeholder function; update after experimental testing
         double pwm = velocity / 100;
@@ -72,6 +71,7 @@ public class Shooter extends SubsystemBase {
         double velocity = pwm * 100;
         return velocity;
     }
+    */
 
     public double getTopMotorSpeed() {
         return shooterTopMotor.getSpeed();
@@ -81,13 +81,11 @@ public class Shooter extends SubsystemBase {
         return shooterBottomMotor.getSpeed();
     }
 
-    public void runTopMotor(double velocity) {
-        double pwmInput = velocityToPWM(velocity);
+    public void runTopMotor(double pwmInput) {
         shooterTopMotor.setSpeed(pwmInput);
     }
 
-    public void runBottomMotor(double velocity) {
-        double pwmInput = velocityToPWM(velocity);
+    public void runBottomMotor(double pwmInput) {
         shooterBottomMotor.setSpeed(pwmInput);
     }
 
