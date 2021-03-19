@@ -56,12 +56,20 @@ public class Drive extends CommandBase {
     @Override
     public void execute() {
         XboxController xbox = RobotContainer.getInstance().getXboxController();
-        
+        if (m_drivetrain.getsingleStickDrive()) {
+
         if (xbox.getY(Hand.kLeft) != 0 || -xbox.getX(Hand.kLeft) != 0)
             m_drivetrain.getDifferentialDrive().arcadeDrive(xbox.getY(Hand.kLeft), -xbox.getX(Hand.kLeft));
         else
             m_drivetrain.getDifferentialDrive().arcadeDrive(xbox.getY(Hand.kRight)/2, -xbox.getX(Hand.kRight)/2);
+        }
+        else {
+            m_drivetrain.getDifferentialDrive().arcadeDrive(xbox.getY(Hand.kLeft), -xbox.getX(Hand.kRight));
+        }
+
     }
+
+    //third version: left - forward and backward, right - left and right
 
     // Called once the command ends or is interrupted.
     @Override

@@ -108,4 +108,10 @@ differentialDrive.setMaxOutput(1.0);
     public DifferentialDrive getDifferentialDrive(){
         return differentialDrive;
     }
+
+    public boolean getsingleStickDrive (){
+        return m_singleStickOperation;
+    }
+
 }
+
