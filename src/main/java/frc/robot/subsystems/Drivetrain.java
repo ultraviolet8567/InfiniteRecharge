@@ -98,5 +98,8 @@ differentialDrive.setMaxOutput(1.0);
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
-
+    
+    public DifferentialDrive getDifferentialDrive(){
+        return differentialDrive;
+    }
 }
