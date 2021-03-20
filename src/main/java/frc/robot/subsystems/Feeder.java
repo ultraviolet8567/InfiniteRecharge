@@ -27,7 +27,7 @@ public class Feeder extends SubsystemBase {
     @Override
     public void periodic() {
         // This method will be called once per scheduler run
-        SmartDashboard.putNumber("Motor Speeds/Feeder", feederStorageMotor.getSpeed());
+        SmartDashboard.putNumber("Motor Speed: Feeder", feederStorageMotor.getSpeed());
     }
 
     @Override
