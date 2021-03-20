@@ -84,11 +84,11 @@ differentialDrive.setMaxOutput(0.5);
     @Override
     public void periodic() {
         // This method will be called once per scheduler run
-        SmartDashboard.putNumber("Left Front Motor Speed", leftFrontMotor.get());
-        SmartDashboard.putNumber("Right Front Motor Speed", rightFrontMotor.get());
-        SmartDashboard.putNumber("Left Back Motor Speed", leftRearMotor.get());
-        SmartDashboard.putNumber("Right Back Motor Speed", rightRearMotor.get());
-        SmartDashboard.putString("Toggle Setting", m_singleStickOperation ? "singleStick" : "splitControl");
+        SmartDashboard.putNumber("Motor Speeds/Left Front", leftFrontMotor.get());
+        SmartDashboard.putNumber("Motor Speeds/Right Front", rightFrontMotor.get());
+        SmartDashboard.putNumber("Motor Speeds/Left Back", leftRearMotor.get());
+        SmartDashboard.putNumber("Motor Speeds/Right Back", rightRearMotor.get());
+        SmartDashboard.putString("Drive Setting", m_singleStickOperation ? "singleStick" : "splitControl");
 
     }
 
