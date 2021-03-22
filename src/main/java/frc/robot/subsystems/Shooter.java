@@ -26,10 +26,8 @@ public class Shooter extends SubsystemBase {
         SmartDashboard.putNumber("Motor Speeds: Shooter Bottom", shooterBottomMotor.getSpeed());
     }
 
-    // This method will be called once per scheduler run when in simulation
     @Override
     public void simulationPeriodic() {
-
     }
 
     public double getTopMotorSpeed() {
