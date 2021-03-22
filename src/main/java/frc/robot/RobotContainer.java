@@ -61,8 +61,8 @@ public class RobotContainer {
     final JoystickButton bumperRight_FeederOn = new JoystickButton(xboxController, XboxController.Button.kBumperRight.value);        
     bumperRight_FeederOn.whileHeld(new FeederOn(m_feeder), true);
 
-    final JoystickButton start_ShooterOff = new JoystickButton(xboxController, XboxController.Button.kStart.value);        
-    start_ShooterOff.whenPressed(new ShooterOff(m_shooter), true);
+    final JoystickButton bumperLeft_ShooterOff = new JoystickButton(xboxController, XboxController.Button.kBumperLeft.value);        
+    bumperLeft_ShooterOff.whenPressed(new ShooterOff(m_shooter), true);
 
     final JoystickButton b_ShooterOnRed = new JoystickButton(xboxController, XboxController.Button.kB.value);        
     b_ShooterOnRed.whenPressed(new ShooterOnRed(m_shooter), true);
