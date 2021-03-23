@@ -6,7 +6,6 @@ import frc.robot.subsystems.Drivetrain;
 public class DriveToggle extends CommandBase {
 
     private final Drivetrain m_drivetrain;
-    private boolean completed = false;
 
     public DriveToggle(Drivetrain subsystem) {
         m_drivetrain = subsystem;
@@ -16,13 +15,12 @@ public class DriveToggle extends CommandBase {
     // Called when the command is initially scheduled.
     @Override
     public void initialize() {
+        m_drivetrain.toggleSingleStick();
     }
 
     // Called every time the scheduler runs while the command is scheduled.
     @Override
     public void execute() {
-        m_drivetrain.toggleSingleStick();
-        completed = true;
     }
 
     // Called once the command ends or is interrupted.
@@ -33,7 +31,7 @@ public class DriveToggle extends CommandBase {
     // Returns true when the command should end.
     @Override
     public boolean isFinished() {
-        return completed;
+        return true;
     }
 
     @Override
