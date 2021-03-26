@@ -46,7 +46,7 @@ public class Drivetrain extends SubsystemBase {
         addChild("Differential Drive", differentialDrive);
         differentialDrive.setSafetyEnabled(true);
         differentialDrive.setExpiration(0.1);
-        differentialDrive.setMaxOutput(1.0);
+        differentialDrive.setMaxOutput(0.5);
     }
 
     // This method will be called once per scheduler run
