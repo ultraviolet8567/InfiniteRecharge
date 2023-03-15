@@ -1,28 +1,28 @@
 package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
-import edu.wpi.first.wpilibj.PWMSparkMax;
+import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class Drivetrain extends SubsystemBase {
     
-    private PWMSparkMax leftFrontMotor;
-    private PWMSparkMax leftRearMotor;
+    private Spark leftFrontMotor;
+    private Spark leftRearMotor;
     private SpeedControllerGroup leftControllerGroup;
-    private PWMSparkMax rightFrontMotor;
-    private PWMSparkMax rightRearMotor;
+    private Spark rightFrontMotor;
+    private Spark rightRearMotor;
     private SpeedControllerGroup rightControllerGroup;
     private DifferentialDrive differentialDrive;
     private boolean m_singleStickOperation = true;
     
     public Drivetrain() {
-        leftFrontMotor = new PWMSparkMax(6);
+        leftFrontMotor = new Spark(6);
         addChild("LeftFrontMotor", leftFrontMotor);
         leftFrontMotor.setInverted(false);
 
-        leftRearMotor = new PWMSparkMax(8);
+        leftRearMotor = new Spark(8);
         addChild("LeftRearMotor", leftRearMotor);
         leftRearMotor.setInverted(false);
 
@@ -30,11 +30,11 @@ public class Drivetrain extends SubsystemBase {
         addChild("LeftControllerGroup", leftControllerGroup);
         
 
-        rightFrontMotor = new PWMSparkMax(7);
+        rightFrontMotor = new Spark(7);
         addChild("RightFrontMotor", rightFrontMotor);
         rightFrontMotor.setInverted(false);
 
-        rightRearMotor = new PWMSparkMax(9);
+        rightRearMotor = new Spark(9);
         addChild("RightRearMotor", rightRearMotor);
         rightRearMotor.setInverted(false);
 
